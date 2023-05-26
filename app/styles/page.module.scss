@@ -1,5 +1,8 @@
+@import 'variables';
+
 .main {
   h1 {
-    font-family: "--vietnam-pro", sans-serif;
+    font-family: $ff-primary;
   }
 }
+
