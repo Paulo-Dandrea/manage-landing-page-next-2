@@ -1,0 +1,140 @@
+
+
+/**============================================
+ *! RESET from: https://andy-bell.co.uk/a-modern-css-reset/
+ *=============================================**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+   /* Remove all font-sizes, boldness, etc. It helps 
+  to force the developer to choose the text element based on semantics,
+  not size */
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* h1,
+h2,
+h3 {
+  line-height: 1.1;
+} */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*=============== END OF RESET SECTION ==============*/
+
+
+
+/**============================================
+ *! GLOBALS
+ *=============================================**/
+
+h1 {
+    font-family: '--vietnam-pro', sans-serif;
+}
+
+
+
+
+* > * {
+  transition: all 0.3s ease-in-out;
+}
+
+.grid_center {
+  display: grid;
+  place-items: center;
+}
+
+.flex_space_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flow > :where(:not(:first-child)) {
+  margin-top: 1.5rem;
+}
+
+.border_radius_1 {
+  border-radius: 1rem;
+}
+
+.border_radius_2 {
+  border-radius: 2rem;
+}
+
+.padding_side_1 {
+  padding: 0 1rem;
+}
+
+.padding_top_bottom_1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding_0_75 {
+  padding: 0.75rem;
+}
+
+.padding_1_5 {
+  padding: 1.5rem;
+}
+
+.txt_align_center {
+  text-align: center;
+}
