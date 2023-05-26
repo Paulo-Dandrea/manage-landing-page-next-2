@@ -1,2 +1,33 @@
+// Primaries Colors
+$clr-primary-400: hsl(228, 39%, 23%);
 
-$ff-primary: var(--vietnam-pro);
+$clr-accent-400: hsl(12, 88%, 59%);
+$clr-accent-100: hsl(13, 100%, 96%);
+
+// Neutral Colors
+$clr-neutral-100: hsl(0, 0%, 98%);
+$clr-neutral-300: hsl(227, 12%, 61%);
+$clr-neutral-900: hsl(233, 12%, 13%);
+
+// Font families
+$ff-body: var(--vietnam-pro);
+$ff-heading: var(--vietnam-pro);
+
+// Font weights
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+
+// Font sizes
+$fs-300: 0.8125rem;
+$fs-400: 0.875rem;
+$fs-500: 1rem;
+$fs-600: 1.875rem;
+$fs-desktop-600: 2.5rem;
+$fs-700: 2.5rem;
+$fs-desktop-700: 3.5rem;
+
+// Breakpoints
+$bp-mobile: 350px;
+$bp-desktop: 1440px;
+
