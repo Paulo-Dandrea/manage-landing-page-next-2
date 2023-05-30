@@ -3,6 +3,8 @@ import s from "./styles/page.module.scss";
 import PageHeader from "./page-components/PageHeader";
 import ilustrationIntro from '../public/images/illustration-intro.svg'
 
+// TODO: 1. Separate already created components into a separate folder
+
 export default function Home() {
   return (
     <div className={s["page-container"]}>
@@ -10,7 +12,7 @@ export default function Home() {
 
       <main>
         {/* Text hero and ilustration */}
-        <section>
+        <section className="padding-block-900">
           <div className={s.container} >
             <div className={s['even-columns']}>
               <div className="">
@@ -35,7 +37,7 @@ export default function Home() {
         </section>
 
         {/* Explanations */}
-        <section>
+        <section className="padding-block-900">
           <div className={s.container} >
             <div className={s['even-columns']}>
               <div>
@@ -89,13 +91,13 @@ export default function Home() {
           </div>
         </section>
         {/* Testimonials */}
-        <section className="carousel">
-          <h2 className="fs-secondary-heading">What they’ve said</h2>
+        <section className="carousel | padding-block-700">
+          <h2 className="fs-secondary-heading fw-bold">What they’ve said</h2>
           {/* Carousel */}
           <button className="button">Get Started</button>
         </section>
 
-        <section className="cta | bg-accent-400 text-neutral-100">
+        <section className="cta | bg-accent-400 text-neutral-100 padding-block-900">
           <div className={s.container} >
             <div className={s['even-columns']}>
               <div>
@@ -113,7 +115,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-neutral-900 text-neutral-100">
+      <footer className="bg-neutral-900 text-neutral-100 | padding-block-700">
         <div className={s.container} >
           <div className={s['even-columns']}>
             <div>

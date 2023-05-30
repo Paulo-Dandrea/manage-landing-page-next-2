@@ -81,52 +81,6 @@ svg {
  *! GLOBALS
  *=============================================**/
 
-* > * {
-  transition: all 0.3s ease-in-out;
-}
-
-.grid_center {
-  display: grid;
-  place-items: center;
-}
-
-.flex_space_between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flow > :where(:not(:first-child)) {
-  margin-top: 1.5rem;
-}
-
-.border_radius_1 {
-  border-radius: 1rem;
-}
-
-.border_radius_2 {
-  border-radius: 2rem;
-}
-
-.padding_side_1 {
-  padding: 0 1rem;
-}
-
-.padding_top_bottom_1 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.padding_0_75 {
-  padding: 0.75rem;
-}
-
-.padding_1_5 {
-  padding: 1.5rem;
-}
-
-.txt_align_center {
-  text-align: center;
-}
 
 /**============================================
  *! Utility classes
@@ -156,8 +110,18 @@ svg {
 .fs-500 { font-size: $fs-500;}
 .fs-600 { font-size: $fs-600;}
 
-.fs-primary-heading { font-size: $fs-primary-heading;}
-.fs-secondary-heading { font-size: $fs-secondary-heading;}
+.fs-primary-heading { font-size: $fs-primary-heading; line-height: 1.2; }
+.fs-secondary-heading { font-size: $fs-secondary-heading;  line-height: 1.2;}
+
+// apply vertical padding 
+.padding-block-400 { padding-block: $size-400;}
+.padding-block-500 { padding-block: $size-500;}
+.padding-block-600 { padding-block: $size-600;}
+.padding-block-700 { padding-block: $size-700;}
+.padding-block-800 { padding-block: $size-800;}
+.padding-block-900 { padding-block: $size-900;}
+
+
 
 /**============================================
  *! General styling
