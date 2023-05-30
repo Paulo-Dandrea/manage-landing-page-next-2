@@ -11,7 +11,7 @@ export default function PageHeader() {
       <div className="container">
 
         <a href="#">
-          <Image src="images/logo.svg" alt="Manage" width="146" height="24" />
+          <Image src="images/logo.svg" alt="Manage"  width="146" height="24" />
         </a>
 
         <nav className="primary-navigation">

@@ -42,5 +42,5 @@ $fs-nav-desktop: $fs-300;
 $fs-button: $fs-300;
 
 // Breakpoints
-$bp-mobile: 350px;
+$bp-mobile: 50em; // 'em' is the only measurement consistent with all the browsers
 $bp-desktop: 1440px;
