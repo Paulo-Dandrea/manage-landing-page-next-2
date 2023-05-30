@@ -1,13 +1,10 @@
 @import "variables";
 
-.main {
-  
-  
+.body {
   font-family: $ff-body;
 
   font-size: $fs-body;
   @media (min-width: $bp-mobile) {
     font-size: $fs-body-desktop;
   }
-
 }
