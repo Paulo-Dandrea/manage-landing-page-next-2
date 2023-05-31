@@ -3,8 +3,8 @@ import s from "../styles/page.module.scss";
 export function PageExplanations() {
   return (
     <section className="padding-block-900">
-      <div className={s.container}>
-        <div className={s["even-columns"]}>
+      <div className="container">
+        <div className="even-columns">
           <div>
             <h2 className="fs-secondary-heading fw-bold">
               What’s different about Manage?

@@ -5,8 +5,8 @@ import ilustrationIntro from "/public/images/illustration-intro.svg";
 export function PageFooter() {
   return (
     <footer className="bg-neutral-900 text-neutral-100 | padding-block-700">
-      <div className={s.container}>
-        <div className={s["even-columns"]}>
+      <div className="container">
+        <div className="even-columns">
           <div>
             <a href="#">
               <Image

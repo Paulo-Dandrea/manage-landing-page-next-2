@@ -5,8 +5,8 @@ import ilustrationIntro from '/public/images/illustration-intro.svg'
 export function PageHero() {
   return (
     <section className="padding-block-900">
-      <div className={s.container}>
-        <div className={s["even-columns"]}>
+      <div className="container">
+        <div className="even-columns">
           <div className="">
             <h1 className="fs-primary-heading fw-bold">
               Bring everyone together to build better products.

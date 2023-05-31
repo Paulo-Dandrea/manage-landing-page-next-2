@@ -9,27 +9,6 @@
     font-size: $fs-body-desktop;
   }
 
-  // TODO: Or these classes should be on global.scss or all utility classes from
-  // there and from here should be in a standalone file.
-  // Although, I want to be able to call on className easily
-
-  .container {
-    // LEARNED: This CSS code sets the width of an element to be the minimum value between the custom property "--max-width" and 100% of the width of its parent container minus the value of the custom property "--padding". This allows the element to be responsive and adapt to different screen sizes while also ensuring that it doesn't exceed the maximum width defined by the "--max-width" property.
-    --max-width: 1100px;
-    --padding: 1rem;
-    width: min(var(--max-width), 100% - var(--padding));
-    margin-inline: auto;
-  }
-
-  .even-columns {
-    display: grid;
-    gap: 1rem;
-
-    @media (min-width: $bp-mobile) {
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-    }
-  }
 
   button {
     cursor: pointer;
