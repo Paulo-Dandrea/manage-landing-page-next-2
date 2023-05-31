@@ -1,5 +1,4 @@
 import Image from "next/image";
-import s from "../styles/page.module.scss";
 import ilustrationIntro from '/public/images/illustration-intro.svg'
 
 export function PageHero() {
@@ -7,7 +6,7 @@ export function PageHero() {
     <section className="padding-block-900">
       <div className="container">
         <div className="even-columns">
-          <div className="">
+          <div>
             <h1 className="fs-primary-heading fw-bold">
               Bring everyone together to build better products.
             </h1>

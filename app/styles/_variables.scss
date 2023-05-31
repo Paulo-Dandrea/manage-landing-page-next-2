@@ -1,10 +1,12 @@
+@use "sass:color";
+
 // Primaries Colors
 $clr-primary-400: hsl(228, 39%, 23%);
 
-$clr-accent-500: hsl(12, 50%, 45%);
-$clr-accent-400: hsl(12, 88%, 59%);
-$clr-accent-300: hsl(12, 88%, 80%);
 $clr-accent-100: hsl(13, 100%, 96%);
+$clr-accent-300: hsl(12, 88%, 80%);
+$clr-accent-400: hsl(12, 88%, 59%);
+$clr-accent-500: hsl(12, 50%, 45%);
 
 // Neutral Colors
 $clr-neutral-100: hsl(0, 0%, 98%);

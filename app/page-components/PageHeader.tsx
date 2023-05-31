@@ -1,8 +1,14 @@
 import Image from "next/image";
-import ListAnchors from "../components/ListAnchors";
+import ListAnchors, { Anchor } from "../components/ListAnchors";
 
 export function PageHeader() {
-  const navOptions = ["Pricing", "Product", "About Us", "Careers", "Community"];
+  const navOptions: Anchor[] = [
+    { text: "Pricing" },
+    { text: "Product" },
+    { text: "About Us" },
+    { text: "Careers" },
+    { text: "Community" },
+  ];
 
   return (
     <header className="primary-header">
@@ -12,7 +18,7 @@ export function PageHeader() {
         </a>
 
         <nav className="primary-navigation">
-          <ListAnchors anchors={navOptions} />
+          <ListAnchors anchors={navOptions} ulAriaLabel="Primary" />
         </nav>
 
         <button className="button">Get Started</button>

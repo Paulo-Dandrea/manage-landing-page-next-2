@@ -1,6 +1,6 @@
-/**============================================
+/** ============================================
  *! RESET from: https://andy-bell.co.uk/a-modern-css-reset/
- *=============================================**/
+ * =============================================**/
 
 *,
 *::before,
@@ -81,46 +81,100 @@ svg {
  *! GLOBALS
  *=============================================**/
 
-
 /**============================================
  *! Utility classes
  *=============================================**/
 @import "variables";
 
-.text-primary-400 { color: $clr-primary-400;}
-.text-accent-400 { color: $clr-accent-400;}
-.text-accent-100 { color: $clr-accent-100;}
-.text-neutral-100 { color: $clr-neutral-100;}
-.text-neutral-300 { color: $clr-neutral-300;}
-.text-neutral-900 { color: $clr-neutral-900;}
+.text-primary-400 {
+  color: $clr-primary-400;
+}
+.text-accent-400 {
+  color: $clr-accent-400;
+}
+.text-accent-100 {
+  color: $clr-accent-100;
+}
+.text-neutral-100 {
+  color: $clr-neutral-100;
+}
+.text-neutral-300 {
+  color: $clr-neutral-300;
+}
+.text-neutral-900 {
+  color: $clr-neutral-900;
+}
 
-.bg-primary-400 { background-color: $clr-primary-400;}
-.bg-accent-400 { background-color: $clr-accent-400;}
-.bg-accent-100 { background-color: $clr-accent-100;}
-.bg-neutral-100 { background-color: $clr-neutral-100;}
-.bg-neutral-300 { background-color: $clr-neutral-300;}
-.bg-neutral-900 { background-color: $clr-neutral-900;}
+.bg-primary-400 {
+  background-color: $clr-primary-400;
+}
+.bg-accent-400 {
+  background-color: $clr-accent-400;
+}
+.bg-accent-100 {
+  background-color: $clr-accent-100;
+}
+.bg-neutral-100 {
+  background-color: $clr-neutral-100;
+}
+.bg-neutral-300 {
+  background-color: $clr-neutral-300;
+}
+.bg-neutral-900 {
+  background-color: $clr-neutral-900;
+}
 
-.fw-bold { font-weight: $fw-bold;}
-.fw-semi-bold { font-weight: $fw-semi-bold;}
-.fw-regular { font-weight: $fw-regular;}
+.fw-bold {
+  font-weight: $fw-bold;
+}
+.fw-semi-bold {
+  font-weight: $fw-semi-bold;
+}
+.fw-regular {
+  font-weight: $fw-regular;
+}
 
-.fs-300 { font-size: $fs-300;}
-.fs-400 { font-size: $fs-400;}
-.fs-500 { font-size: $fs-500;}
-.fs-600 { font-size: $fs-600;}
+.fs-300 {
+  font-size: $fs-300;
+}
+.fs-400 {
+  font-size: $fs-400;
+}
+.fs-500 {
+  font-size: $fs-500;
+}
+.fs-600 {
+  font-size: $fs-600;
+}
 
-.fs-primary-heading { font-size: $fs-primary-heading; line-height: 1.2; }
-.fs-secondary-heading { font-size: $fs-secondary-heading;  line-height: 1.2;}
+.fs-primary-heading {
+  font-size: $fs-primary-heading;
+  line-height: 1.2;
+}
+.fs-secondary-heading {
+  font-size: $fs-secondary-heading;
+  line-height: 1.2;
+}
 
-// apply vertical padding 
-.padding-block-400 { padding-block: $size-400;}
-.padding-block-500 { padding-block: $size-500;}
-.padding-block-600 { padding-block: $size-600;}
-.padding-block-700 { padding-block: $size-700;}
-.padding-block-800 { padding-block: $size-800;}
-.padding-block-900 { padding-block: $size-900;}
-
+// apply vertical padding
+.padding-block-400 {
+  padding-block: $size-400;
+}
+.padding-block-500 {
+  padding-block: $size-500;
+}
+.padding-block-600 {
+  padding-block: $size-600;
+}
+.padding-block-700 {
+  padding-block: $size-700;
+}
+.padding-block-800 {
+  padding-block: $size-800;
+}
+.padding-block-900 {
+  padding-block: $size-900;
+}
 
 .container {
   // LEARNED: This CSS code sets the width of an element to be the minimum value between the custom property "--max-width" and 100% of the width of its parent container minus the value of the custom property "--padding". This allows the element to be responsive and adapt to different screen sizes while also ensuring that it doesn't exceed the maximum width defined by the "--max-width" property.
@@ -142,6 +196,3 @@ svg {
 /**============================================
  *! General styling
  *=============================================**/
-
-
-

@@ -1,13 +1,30 @@
-type ListAnchorsProps = {
-  anchors: string[];
+export type Anchor = {
+  text?: string;
+  ariaLabel?: string;
+  href?: string;
+  target?: string;
 };
 
-export default function ListAnchors({ anchors }: ListAnchorsProps) {
+type ListAnchorsProps = {
+  anchors: Anchor[];
+  ulAriaLabel: string;
+};
+
+export default function ListAnchors({
+  anchors,
+  ulAriaLabel = "",
+}: ListAnchorsProps) {
   return (
-    <ul role="list">
+    <ul role="list" aria-label={ulAriaLabel}>
       {anchors.map((anchor, i) => (
         <li key={i}>
-          <a href="#">{anchor}</a>
+          <a
+            href={anchor.href || "#"}
+            target={anchor.target}
+            aria-label={anchor.ariaLabel}
+          >
+            {anchor.text}
+          </a>
         </li>
       ))}
     </ul>

@@ -1,8 +1,24 @@
 import Image from "next/image";
-import s from "../styles/page.module.scss";
-import ilustrationIntro from "/public/images/illustration-intro.svg";
+import ListAnchors, { Anchor } from "../components/ListAnchors";
 
 export function PageFooter() {
+  const footerLinks: Anchor[] = [
+    { text: "Home", href: "/home" },
+    { text: "Pricing" },
+    { text: "Products" },
+    { text: "Carrers" },
+    { text: "Community" },
+    { text: "Privacy Policy" },
+  ];
+
+  const socialLinksImages: Anchor[] = [
+    { ariaLabel: "facebook" },
+    { ariaLabel: "youtube" },
+    { ariaLabel: "twitter" },
+    { ariaLabel: "pinterest" },
+    { ariaLabel: "instagram" },
+  ];
+
   return (
     <footer className="bg-neutral-900 text-neutral-100 | padding-block-700">
       <div className="container">
@@ -16,50 +32,15 @@ export function PageFooter() {
                 height="24"
               />
             </a>
-            <ul role="list" aria-label="social-links">
-              <li>
-                <a aria-label="facebook" href="#"></a>
-              </li>
-              <li>
-                <a aria-label="youtube" href="#"></a>
-              </li>
-              <li>
-                <a aria-label="twitter" href="#"></a>
-              </li>
-              <li>
-                <a aria-label="pinterest" href="#"></a>
-              </li>
-              <li>
-                <a aria-label="instagram" href="#"></a>
-              </li>
-            </ul>
+            <ListAnchors
+              anchors={socialLinksImages}
+              ulAriaLabel="social-links"
+            />
           </div>
 
           <div>
             <nav className="foorter-nav">
-              <ul role="list" aria-label="Footer">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
-                </li>
-                <li>
-                  <a href="#">Products</a>
-                </li>
-                <li>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-                <li>
-                  <a href="#">Community</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
+              <ListAnchors anchors={footerLinks} ulAriaLabel="Footer" />
             </nav>
           </div>
 
