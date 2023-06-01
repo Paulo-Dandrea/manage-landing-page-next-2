@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
-import s from './PageHeader.module.scss'
+import s from "./PageHeader.module.scss";
+import { useState } from "react";
 
 /* TODO:
 - Remove globalized page button style
@@ -8,6 +11,8 @@ import s from './PageHeader.module.scss'
 */
 
 export function PageHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
   const navOptions: Anchor[] = [
     { text: "Pricing" },
     { text: "Product" },
@@ -25,6 +30,7 @@ export function PageHeader() {
           </a>
           <button
             className={s.mobile_nav_toggle}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-controls="primary_navigation"
           >
             <Image
@@ -46,18 +52,21 @@ export function PageHeader() {
             <span className="visually-hidden">Menu</span>
           </button>
 
-          <nav className={s.primary_navigation}>
-            <ListAnchors
-              anchors={navOptions}
-              ulAriaLabel="Primary"
-              ulId="primary_navigation"
-            />
+          <nav
+            className={`${s.primary_navigation} ${
+              isMenuOpen ? s.primary_navigation_expanded : ""
+            }`}
+            id="primary_navigation"
+          >
+            <ListAnchors anchors={navOptions} ulAriaLabel="Primary" />
           </nav>
 
-          <button 
-          className="button"
-          style={{display: 'none'}} // TODO: remove this line later
-          >Get Started</button>
+          <button
+            className="button"
+            style={{ display: "none" }} // TODO: remove this line later
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </header>

@@ -14,7 +14,12 @@
 
 @media (max-width: $bp-mobile) {
   .primary_navigation {
-    display: none;
+    display: none; 
+  }
+
+  .primary_navigation_expanded {
+    display: block;
+    position: fixed;
   }
 
   .mobile_nav_toggle {
