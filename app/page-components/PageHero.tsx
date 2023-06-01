@@ -1,5 +1,6 @@
 import Image from "next/image";
-import ilustrationIntro from '/public/images/illustration-intro.svg'
+import ilustrationIntro from "/public/images/illustration-intro.svg";
+import { BTNGetStarted } from "../business-components/index";
 
 export function PageHero() {
   return (
@@ -14,7 +15,7 @@ export function PageHero() {
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <button className="button">Get Started</button>
+            <BTNGetStarted />
           </div>
           <div className="">
             <Image

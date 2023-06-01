@@ -1,4 +1,4 @@
-import s from "../styles/page.module.scss";
+import {BTNGetStarted} from "../business-components";
 
 export function PageCTA() {
   return (
@@ -11,9 +11,7 @@ export function PageCTA() {
             </p>
           </div>
           <div>
-            <button className="button" datatype="inverted">
-              Get Started
-            </button>
+            <BTNGetStarted datatype="inverted" />
           </div>
         </div>
       </div>

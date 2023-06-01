@@ -1,0 +1,1 @@
+export { BTNGetStarted } from "./BtnGetStarted";

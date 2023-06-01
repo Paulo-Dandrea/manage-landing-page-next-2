@@ -2,6 +2,11 @@ import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
 import s from './PageHeader.module.scss'
 
+/* TODO:
+- Remove globalized page button style
+- how to import a style from other module?
+*/
+
 export function PageHeader() {
   const navOptions: Anchor[] = [
     { text: "Pricing" },
