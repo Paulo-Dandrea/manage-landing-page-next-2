@@ -1,17 +1,16 @@
 @use "sass:color";
 
 // Primaries Colors
-$clr-primary-400: hsl(228, 39%, 23%);
-
-$clr-accent-100: hsl(13, 100%, 96%);
-$clr-accent-300: hsl(12, 88%, 80%);
-$clr-accent-400: hsl(12, 88%, 59%);
-$clr-accent-500: hsl(12, 50%, 45%);
+$clr-primary-400: hsl(228deg 39% 23%);
+$clr-accent-100: hsl(13deg 100% 96%);
+$clr-accent-300: hsl(12deg 88% 80%);
+$clr-accent-400: hsl(12deg 88% 59%);
+$clr-accent-500: hsl(12deg 50% 45%);
 
 // Neutral Colors
-$clr-neutral-100: hsl(0, 0%, 98%);
-$clr-neutral-300: hsl(227, 12%, 61%);
-$clr-neutral-900: hsl(233, 12%, 13%);
+$clr-neutral-100: hsl(0deg 0% 98%);
+$clr-neutral-300: hsl(227deg 12% 61%);
+$clr-neutral-900: hsl(233deg 12% 13%);
 
 // Font families
 $ff-body: var(--vietnam-pro);
@@ -34,17 +33,13 @@ $fs-900: 3.5rem;
 // Applied font sizes
 $fs-body: $fs-400;
 $fs-body-desktop: $fs-500;
-
 $fs-primary-heading: $fs-800;
 $fs-primary-heading-desktop: $fs-900;
 $fs-secondary-heading: $fs-700;
 $fs-secondary-heading-desktop: $fs-800;
-
 $fs-nav: $fs-500;
 $fs-nav-desktop: $fs-300;
-
 $fs-button: $fs-300;
-
 $size-100: .25rem;
 $size-200: .5rem;
 $size-300: .75rem;
