@@ -7,15 +7,18 @@ export type Anchor = {
 
 type ListAnchorsProps = {
   anchors: Anchor[];
-  ulAriaLabel: string;
+  ulAriaLabel?: string;
+  ulId?: string;
 };
 
 export default function ListAnchors({
   anchors,
   ulAriaLabel = "",
+  ulId = "",
+
 }: ListAnchorsProps) {
   return (
-    <ul role="list" aria-label={ulAriaLabel}>
+    <ul role="list" aria-label={ulAriaLabel} id={ulId}>
       {anchors.map((anchor, i) => (
         <li key={i}>
           <a

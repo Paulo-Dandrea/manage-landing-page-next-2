@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
+import s from './PageHeader.module.scss'
 
 export function PageHeader() {
   const navOptions: Anchor[] = [
@@ -11,17 +12,48 @@ export function PageHeader() {
   ];
 
   return (
-    <header className="primary-header">
+    <header className={s.primary_header}>
       <div className="container">
-        <a href="#">
-          <Image src="images/logo.svg" alt="Manage" width="146" height="24" />
-        </a>
+        <div className={s.nav_wrapper}>
+          <a href="#">
+            <Image src="images/logo.svg" alt="Manage" width="146" height="24" />
+          </a>
+          <button
+            className={s.mobile_nav_toggle}
+            aria-controls="primary_navigation"
+          >
+            <Image
+              className={s.icon_hamburger}
+              src="images/icon-hamburger.svg"
+              width="25"
+              height="18"
+              alt=""
+              aria-hidden="true"
+            />
+            <Image
+              className={s.icon_close}
+              src="images/icon-close.svg"
+              width="25"
+              height="18"
+              alt=""
+              aria-hidden="true"
+            />
+            <span className="visually-hidden">Menu</span>
+          </button>
 
-        <nav className="primary-navigation">
-          <ListAnchors anchors={navOptions} ulAriaLabel="Primary" />
-        </nav>
+          <nav className={s.primary_navigation}>
+            <ListAnchors
+              anchors={navOptions}
+              ulAriaLabel="Primary"
+              ulId="primary_navigation"
+            />
+          </nav>
 
-        <button className="button">Get Started</button>
+          <button 
+          className="button"
+          style={{display: 'none'}} // TODO: remove this line later
+          >Get Started</button>
+        </div>
       </div>
     </header>
   );

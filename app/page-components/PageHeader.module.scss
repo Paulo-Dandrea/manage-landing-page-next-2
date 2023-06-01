@@ -1,0 +1,41 @@
+// PAGEHEADER
+@import '../styles/variables';
+
+/* navigation */
+
+.primary_header {
+  margin-top: $size-700;
+  // display: flex;
+}
+
+.mobile_nav_toggle {
+  display: none;
+}
+
+@media (max-width: $bp-mobile) {
+  .primary_navigation {
+    display: none;
+  }
+
+  .mobile_nav_toggle {
+    display: none;
+  }
+
+  .mobile_nav_toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0.5em;
+
+    .icon_close {
+      display: none;
+    }
+  }
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
