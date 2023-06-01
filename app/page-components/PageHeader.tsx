@@ -53,8 +53,8 @@ export function PageHeader() {
           </button>
 
           <nav
-            className={`${s.primary_navigation} ${
-              isMenuOpen ? s.primary_navigation_expanded : ""
+            className={`${
+              isMenuOpen ? s.primary_navigation_expanded : s.primary_navigation
             }`}
             id="primary_navigation"
           >
