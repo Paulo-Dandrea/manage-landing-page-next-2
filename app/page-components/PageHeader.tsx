@@ -22,7 +22,7 @@ export function PageHeader() {
   ];
 
   return (
-    <header className={s.primary_header}>
+    <header className={s.primary_header} data-overlay={isMenuOpen}>
       <div className="container">
         <div className={s.nav_wrapper}>
           <a href="#">
@@ -58,7 +58,7 @@ export function PageHeader() {
             }`}
             id="primary_navigation"
           >
-            <ListAnchors anchors={navOptions} ulAriaLabel="Primary" />
+            <ListAnchors anchors={navOptions} ulClassName={s.nav_list} ulAriaLabel="Primary" />
           </nav>
 
           <button

@@ -1,29 +1,58 @@
 // PAGEHEADER
-@import '../styles/variables';
+@import "../styles/variables";
 
 /* navigation */
 
 .primary_header {
-  margin-top: $size-700;
-  // display: flex;
+  padding-top: $size-700;
+
+  &[data-overlay = true]::before {
+    content: '';
+    position: fixed;
+    inset: 0; 
+    background-image: linear-gradient(rgb(0 0 0 / 0),rgb(0 0 0  / 0.8));
+  }
 }
 
 .mobile_nav_toggle {
   display: none;
 }
 
+.nav_list {
+  font-size: $fs-nav;
+}
+
 @media (max-width: $bp-mobile) {
   .primary_navigation {
-    display: none; 
+    display: none;
   }
 
   .primary_navigation_expanded {
     display: block;
-    position: fixed;
+    position: absolute;
+    padding: $size-700;
+    inset: 7rem $size-400 auto; // auto here is setting the bottom inset to fit with the last child
+    background: $clr-neutral-100;
+    border-radius: $size-100;
+    box-shadow: 0  0 .75em rgb(0,0,0,0.05);
+
   }
 
-  .mobile_nav_toggle {
-    display: none;
+  .nav_list {
+    display: grid;
+    gap: $size-600;
+    text-align: center;
+    font-weight: $fw-bold;
+
+    a {
+      text-decoration: none;
+      color: $clr-primary-400;
+
+      &:hover,
+      &:focus {
+        color: $clr-accent-400;
+      }
+    }
   }
 
   .mobile_nav_toggle {
