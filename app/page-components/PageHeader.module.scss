@@ -5,12 +5,20 @@
 .primary_header {
   padding-top: $size-700;
 
-  &[data-overlay="true"]::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+  @media (max-width: $bp-mobile) {
+    &[data-overlay="true"]::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+    }
   }
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mobile_nav_toggle {
@@ -19,7 +27,7 @@
   @media (max-width: $bp-mobile) {
     display: block;
     position: fixed;
-    top: $size-600; 
+    top: $size-600;
     right: $size-400;
     cursor: pointer;
     background: none;
@@ -67,10 +75,4 @@
       }
     }
   }
-}
-
-.nav_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
