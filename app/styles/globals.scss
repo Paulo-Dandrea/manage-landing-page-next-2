@@ -205,6 +205,16 @@ svg {
   padding-block: $size-900;
 }
 
+.display_sm_none {
+  display: none;
+}
+
+.display_md_inline_flex {
+  @media (min-width: $bp-mobile) {
+    display: inline-flex;
+  }
+}
+
 .container {
   // LEARNED: This CSS code sets the width of an element to be the minimum value between the custom property "--max-width" and 100% of the width of its parent container minus the value of the custom property "--padding". This allows the element to be responsive and adapt to different screen sizes while also ensuring that it doesn't exceed the maximum width defined by the "--max-width" property.
   --max-width: 1100px;

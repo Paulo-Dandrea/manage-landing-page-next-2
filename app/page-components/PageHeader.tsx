@@ -4,6 +4,7 @@ import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
 import s from "./PageHeader.module.scss";
 import { useState } from "react";
+import { BTNGetStarted } from "../business-components";
 
 /* TODO:
 - Remove globalized page button style
@@ -58,15 +59,14 @@ export function PageHeader() {
             }`}
             id="primary_navigation"
           >
-            <ListAnchors anchors={navOptions} ulClassName={s.nav_list} ulAriaLabel="Primary" />
+            <ListAnchors
+              anchors={navOptions}
+              ulClassName={s.nav_list}
+              ulAriaLabel="Primary"
+            />
           </nav>
 
-          <button
-            className="button"
-            style={{ display: "none" }} // TODO: remove this line later
-          >
-            Get Started
-          </button>
+          <BTNGetStarted className="display_sm_none | display_md_inline_flex"/>
         </div>
       </div>
     </header>
