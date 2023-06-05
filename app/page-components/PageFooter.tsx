@@ -40,7 +40,7 @@ export function PageFooter() {
 
           <div>
             <nav className="foorter-nav">
-              <ListAnchors anchors={footerLinks} ulAriaLabel="Footer" />
+              <ListAnchors ulClassName="flow flow--tight"anchors={footerLinks} ulAriaLabel="Footer" />
             </nav>
           </div>
 
