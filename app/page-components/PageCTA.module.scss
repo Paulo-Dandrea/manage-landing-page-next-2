@@ -4,21 +4,23 @@
   position: relative;
   isolation: isolate;
 
+  z-index: -1;
+  
+  text-align: center;
+  @media (min-width: $bp-mobile) {
+    text-align: left;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    // z-index: -1;
     inset: 0;
 
-    background-repeat: no-repeat;
+    background-image: url("../../public/images/bg-simplify-section-mobile.svg");
 
-    background-image: url("../../public/images/bg-simplify-section-desktop.svg");
-
-    @media (max-width: $bp-mobile) {
-      background-image: url("../../public/images/bg-simplify-section-mobile.svg");
+    @media (min-width: $bp-mobile) {
+      background-image: url("../../public/images/bg-simplify-section-desktop.svg");
     }
-
-    // background-image: url("../../public/images/bg-tablet-pattern.svg");
-    // opacity: 0.1;
+    background-repeat: no-repeat;
   }
 }

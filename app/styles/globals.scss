@@ -230,10 +230,15 @@ svg {
   margin-inline: auto;
 }
 
-.justify-self-end {
-  justify-self: end;
+.justify-self-center {
+  justify-self: center;
 }
 
+.justify-self-end-md {
+  @media (min-width: $bp-mobile) {
+    justify-self: end;
+  }
+}
 
 .flow > :where(:not(:last-child)) {
   // LEARNED: 'where' here is to avoid the specifity boosting that comes with ":not(last-child"

@@ -13,8 +13,8 @@ export function PageCTA() {
               Simplify how your team works today.
             </p>
           </div>
-          <div className="justify-self-end">
-            <BTNGetStarted className="push-right" datatype="inverted" />
+          <div className="justify-self-center justify-self-end-md">
+            <BTNGetStarted datatype="inverted" />
           </div>
         </div>
       </div>

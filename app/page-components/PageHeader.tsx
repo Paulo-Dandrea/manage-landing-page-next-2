@@ -12,7 +12,7 @@ import { BTNGetStarted } from "../business-components";
 */
 
 export function PageHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navOptions: Anchor[] = [
     { text: "Pricing" },
