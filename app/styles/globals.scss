@@ -230,17 +230,19 @@ svg {
   margin-inline: auto;
 }
 
-
+.justify-self-end {
+  justify-self: end;
+}
 
 
 .flow > :where(:not(:last-child)) {
   // LEARNED: 'where' here is to avoid the specifity boosting that comes with ":not(last-child"
-  margin-bottom: $size-700; 
+  margin-bottom: $size-700;
 }
 
 .flow--tight > :where(:not(:last-child)) {
   // LEARNED: 'where' here is to avoid the specifity boosting that comes with ":not(last-child"
-  margin-bottom: $size-400; 
+  margin-bottom: $size-400;
 }
 
 .even-columns {
@@ -251,4 +253,8 @@ svg {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+.vertical-align-center {
+  align-items: center;
 }

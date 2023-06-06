@@ -1,0 +1,24 @@
+@import "../styles/variables";
+
+.cta {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    // z-index: -1;
+    inset: 0;
+
+    background-repeat: no-repeat;
+
+    background-image: url("../../public/images/bg-simplify-section-desktop.svg");
+
+    @media (max-width: $bp-mobile) {
+      background-image: url("../../public/images/bg-simplify-section-mobile.svg");
+    }
+
+    // background-image: url("../../public/images/bg-tablet-pattern.svg");
+    // opacity: 0.1;
+  }
+}
