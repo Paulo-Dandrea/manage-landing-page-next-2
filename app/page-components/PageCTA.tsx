@@ -9,7 +9,7 @@ export function PageCTA() {
       <div className="container">
         <div className="even-columns vertical-align-center">
           <div>
-            <p className="fs-secondary-heading fw-bold">
+            <p className="fs-primary-heading fw-bold">
               Simplify how your team works today.
             </p>
           </div>
