@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Anchor } from "../components/ListAnchors";
 import s from '../page-components/PageFooter.module.scss';
+import SvgComponent from "../styles/FacebookIcon";
 
 export const SocialLinksList = () => {
     const socialLinksImages: Anchor[] = [
@@ -23,6 +24,7 @@ export const SocialLinksList = () => {
             />
           </div>
         ))}
+        <SvgComponent />
       </ul>
     );
   };

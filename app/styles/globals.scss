@@ -249,16 +249,14 @@ svg {
 
 .flex {
   display: flex;
-  
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-
 .space-between {
- justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-items-center {
@@ -266,7 +264,7 @@ svg {
 }
 
 .align-items-fist-baseline-md {
-  @media (min-width: $bp-mobile){
+  @media (min-width: $bp-mobile) {
     align-items: first baseline;
   }
 }
@@ -302,3 +300,13 @@ svg {
 .vertical-align-center {
   align-items: center;
 }
+
+.social-icon {
+  fill: $clr-neutral-100;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    fill: $clr-accent-400;
+  }
+}
+
