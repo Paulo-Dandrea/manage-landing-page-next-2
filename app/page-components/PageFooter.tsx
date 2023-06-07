@@ -2,6 +2,7 @@ import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
 import s from "./PageFooter.module.scss";
 import { SocialLinksList } from "../business-components";
+import SvgComponent from "../styles/SvgComponent";
 
 export function PageFooter() {
   const footerLinks: Anchor[] = [
@@ -23,7 +24,7 @@ export function PageFooter() {
 
             <a href="#">
               <Image
-                src="images/logo.svg"
+                src="images/logo-white.svg"
                 alt="Manage"
                 width="146"
                 height="24"
