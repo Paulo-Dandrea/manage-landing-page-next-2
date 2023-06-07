@@ -30,3 +30,15 @@
     fill: red;
   }
 }
+
+.social-icon {
+  fill: $clr-neutral-100;
+  transition: all 0.2s ease-in-out;
+  // width: auto;
+  width: 40px;
+  // height: 40px;
+
+  &:hover {
+    fill: $clr-accent-400;
+  }
+}

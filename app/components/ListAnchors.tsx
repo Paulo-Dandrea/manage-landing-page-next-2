@@ -3,6 +3,7 @@ export type Anchor = {
   ariaLabel?: string;
   href?: string;
   target?: string;
+  pathD?: string;
 };
 
 type ListAnchorsProps = {
