@@ -1,29 +1,26 @@
 import Image from "next/image";
 import ListAnchors, { Anchor } from "../components/ListAnchors";
+import s from "./PageFooter.module.scss";
+import { SocialLinksList } from "../business-components";
 
 export function PageFooter() {
   const footerLinks: Anchor[] = [
     { text: "Home", href: "/home" },
     { text: "Pricing" },
     { text: "Products" },
+    { text: "About US" },
     { text: "Carrers" },
     { text: "Community" },
     { text: "Privacy Policy" },
-  ];
-
-  const socialLinksImages: Anchor[] = [
-    { ariaLabel: "facebook" },
-    { ariaLabel: "youtube" },
-    { ariaLabel: "twitter" },
-    { ariaLabel: "pinterest" },
-    { ariaLabel: "instagram" },
   ];
 
   return (
     <footer className="bg-neutral-900 text-neutral-100 | padding-block-700">
       <div className="container">
         <div className="even-columns">
-          <div>
+          <div className="flex flex-col space-between align-items-center align-items-fist-baseline-md">
+            <SocialLinksList />
+
             <a href="#">
               <Image
                 src="images/logo.svg"
@@ -32,15 +29,15 @@ export function PageFooter() {
                 height="24"
               />
             </a>
-            <ListAnchors
-              anchors={socialLinksImages}
-              ulAriaLabel="social-links"
-            />
           </div>
 
           <div>
-            <nav className="foorter-nav">
-              <ListAnchors ulClassName="flow flow--tight"anchors={footerLinks} ulAriaLabel="Footer" />
+            <nav className={s["footer-nav"]}>
+              <ListAnchors
+                ulClassName="flow flow--tight"
+                anchors={footerLinks}
+                ulAriaLabel="Footer"
+              />
             </nav>
           </div>
 

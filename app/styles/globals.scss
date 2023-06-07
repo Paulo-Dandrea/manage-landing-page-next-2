@@ -77,6 +77,13 @@ svg {
 /**  ============================================
  *! Generics
  *=============================================  **/
+/* TODO: Make all interactions change smoothly, with transition */
+/* TODO: make inverted buttton on hover do something */
+/* TODO: 
+- make inverted buttton on hover do something 
+- remove text decoration on main nav
+- texts inside buttons, not in the middle; Should we use inline-flex?
+*/
 
 .visually-hidden {
   position: absolute;
@@ -238,6 +245,38 @@ svg {
   @media (min-width: $bp-mobile) {
     justify-self: end;
   }
+}
+
+.flex {
+  display: flex;
+  
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+.space-between {
+ justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-fist-baseline-md {
+  @media (min-width: $bp-mobile){
+    align-items: first baseline;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: $size-400;
 }
 
 .flow > :where(:not(:last-child)) {

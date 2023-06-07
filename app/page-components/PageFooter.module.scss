@@ -1,0 +1,32 @@
+@import "../styles/variables";
+
+.footer-nav {
+    columns: 2;
+  a {
+    color: $clr-neutral-100;
+    text-decoration: none;
+
+    &:is(:hover, :focus) {
+      color: $clr-accent-400;
+    }
+  }
+}
+
+.logo-container {
+  position: relative;
+  width: $size-600;
+  height: $size-600;
+  
+  @media (min-width: $bp-mobile) {
+    width: $size-500;
+    height: $size-500;
+  }
+
+  .icon{
+    fill: red;
+  }
+
+  img {
+    fill: red;
+  }
+}
