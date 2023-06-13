@@ -37,7 +37,7 @@
   width: 40px;
   height: 40px;
 
-  &:hover {
+  &:is(:hover, :focus) {
     fill: $clr-accent-400;
   }
 }

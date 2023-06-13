@@ -251,8 +251,14 @@ svg {
   display: flex;
 }
 
-.flex-col {
+.flex-direction-column {
   flex-direction: column;
+}
+
+.flex-column-reversed-md {
+  @media (min-width: $bp-mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .space-between {
@@ -275,6 +281,10 @@ svg {
 
 .gap-1 {
   gap: $size-400;
+}
+
+.gap-2 {
+  gap: $size-600
 }
 
 .flow > :where(:not(:last-child)) {
@@ -300,6 +310,3 @@ svg {
 .vertical-align-center {
   align-items: center;
 }
-
-
-

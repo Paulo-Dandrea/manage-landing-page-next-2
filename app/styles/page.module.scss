@@ -30,6 +30,7 @@
   line-height: 1;
   color: $clr-neutral-100;
   background-color: $clr-accent-400;
+  
   box-shadow: 0 1.125em 1em -1em $clr-accent-500;
 
   &:hover,
@@ -47,4 +48,9 @@
       color: $clr-accent-300;
     }
   }
+}
+
+
+.btn--form {
+  box-shadow: none;
 }
