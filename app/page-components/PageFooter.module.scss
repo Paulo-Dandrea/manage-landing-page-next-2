@@ -1,7 +1,33 @@
 @import "../styles/variables";
 
+.primary-footer-wrapper {
+  display: grid;
+  gap: $size-700;
+  grid-template-areas:
+    "form"
+    "nav"
+    "logo-social";
+
+  @media (min-width: $bp-mobile) {
+    grid-template-areas: 
+    "logo-social nav form";
+  }
+
+  > :first-child {
+    grid-area: form;
+  }
+
+  > :nth-child(2) {
+    grid-area: nav;
+  }
+
+  > :last-child {
+    grid-area: logo-social;
+  }
+}
+
 .footer-nav {
-    columns: 2;
+  columns: 2;
   a {
     color: $clr-neutral-100;
     text-decoration: none;
@@ -16,13 +42,13 @@
   position: relative;
   width: $size-600;
   height: $size-600;
-  
+
   @media (min-width: $bp-mobile) {
     width: $size-500;
     height: $size-500;
   }
 
-  .icon{
+  .icon {
     fill: red;
   }
 
